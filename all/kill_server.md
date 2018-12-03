@@ -44,7 +44,12 @@ $ kill -9 4894
 ```
 
 And that's it. You can kill this server without an error running.
+A one liner for the above steps is 
 
+```
+$ kill -9 $(lsof -ti :8000)
+```
+You can replace change the port number in case you are using a different ont.
 Alternatively we can use the `fg` command in linux, which brings our processes to the foreground, and than press `ctrl + c` to quit the server.
 For more help on fg use :
 
